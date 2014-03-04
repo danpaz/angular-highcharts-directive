@@ -24,7 +24,7 @@ angular.module('chartsExample.directives', []).directive('chart', function() {
                 if ($attrs.height)
                     $scope.chartData.chart.height = $scope.chartData.chart.height || $attrs.height;
                 if ($attrs.width)
-                    $scope.chartData.chart.width = $scope.chartData.chart.type || $attrs.width;
+                    $scope.chartData.chart.width = $scope.chartData.chart.width || $attrs.width;
 
                 $scope.chartObj = new Highcharts.Chart($scope.chartData);
             });
